@@ -3,7 +3,7 @@ import React from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-
+import SchoolIcon from '@material-ui/icons/School';
 // @material-ui/icons
 
 // core components
@@ -43,27 +43,31 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax filter responsive image="/img/landing-bg.jpg">
+      <Parallax filter responsive image="/img/seu-bg.jfif">
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Your Story Starts With Us.</h1>
+              <h1 className={classes.title}>About Us</h1>
               <h4>
-                Every landing page needs a small description after the big bold
-                title, that{"'"}s why we added this text here. Add here all the
-                information that can make you or your product create the first
-                impression.
+                This is Nanjing, an ancient capital that served six dynasties in the
+                  history of China, where its past glory is still noticeable.
+              </h4>
+                  <h4>
+                  And this is Southeast University, one of the blessed inheritors of
+                      National Central University in ROC's day.
               </h4>
               <br />
               <Button
                 color="danger"
                 size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
+                href="https://www.seu.edu.cn"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fas fa-play" />
-                Watch video
+                  <SchoolIcon />
+                  <span style={{marginLeft: 4, marginTop: 3}}>
+                SEU main site
+                      </span>
               </Button>
             </GridItem>
           </GridContainer>
@@ -72,8 +76,8 @@ export default function LandingPage(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <ProductSection />
-          <TeamSection />
           <WorkSection />
+            <TeamSection />
         </div>
       </div>
       <Footer />

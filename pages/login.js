@@ -128,7 +128,7 @@ export default function LoginPage(props) {
                         <GridContainer justify="center">
                             <GridItem xs={12} sm={6} md={4} >
                                 <LinkCard  lab='How is Covid-19 Delta different?' src='/img/virus.png'
-                                           href='/admin/info'
+                                           href='/admin/basic'
                                 />
                             </GridItem>
                             <GridItem xs={12} sm={6} md={4} >

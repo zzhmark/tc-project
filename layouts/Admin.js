@@ -19,6 +19,9 @@ import bgImage from "public/img/seu_big.jpg";
 import logo from "public/img/Southeast_University_logo.png";
 import places from 'variables/places'
 let ps;
+import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
+import Button from "../components/CustomButtons/Button";
+
 
 export default function Admin({ children, ...rest }) {
   // used for checking current route
@@ -96,7 +99,15 @@ export default function Admin({ children, ...rest }) {
         {/* On the /maps route we want the map to be on full screen - this is not possible if the content and conatiner classes are present because they have some paddings which would make the map smaller */}
         {getRoute() ? (
           <div className={classes.content}>
-            <div className={classes.container}>{children}</div>
+            <div className={classes.container}>
+              {children}
+              {router.pathname.includes('/admin/preventions')?
+                  <Button onClick={() => {
+                    mainPanel.current.scrollTop = 0;
+                  }
+                  }><ArrowUpwardIcon/>Start your voyage from above</Button>
+                  : null}
+            </div>
           </div>
         ) : (
           <div className={classes.map}>{children}</div>

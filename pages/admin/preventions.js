@@ -34,7 +34,6 @@ import Container from '@material-ui/core/Container';
 import Quote from "components/Typography/Quote.js";
 import { bugs, website, server } from "variables/general.js";
 
-
 import {
     dailySalesChart,
     emailsSubscriptionChart,
@@ -43,19 +42,61 @@ import {
 
 import styles from "assets/jss/nextjs-material-dashboard/views/dashboardStyle.js";
 
-function PreventionsPage() {
+import Button from 'components/CustomButtons/Button'
+import cardImagesStyles from "../../assets/jss/nextjs-material-dashboard/cardImagesStyles";
+
+const useStyles2 = makeStyles(cardImagesStyles);
+
+function PreventionsPage(props) {
     const useStyles = makeStyles(styles);
+    const cardClasses = useStyles2();
     const classes = useStyles();
     return (
-        <div>
-            <Container maxWidth="md" style={{
+        <Container maxWidth="md" style={{
+            fontFamily: `"Roboto Slab", "Times New Roman", serif`,
+        }}>
+            <h2 style={{
                 fontFamily: `"Roboto Slab", "Times New Roman", serif`,
-            }}>
-                <h1>
-                GO GO GO
-                </h1>
-            </Container>
-        </div>
+            }}>General Protective measures against novel coronavirus</h2>
+            <h3 style={{
+                fontFamily: `fantasy`,
+            }}>Vaccines</h3>
+            <p>
+                The COVID-19 vaccines approved or authorized in the United States are highly effective at preventing severe disease and death, including the Delta variant. But they are not 100% effective, some fully vaccinated people will become infected (called a breakthrough infection) and experience illness. The vaccine provides optimal protection against serious illness and death.
+            </p>
+            <p>
+                Vaccines play a crucial role in limiting the spread of the virus and minimizing severe disease. Although vaccines are highly effective, they are not perfect, and there will be vaccine breakthrough infections. Millions of Americans are vaccinated, and that number is growing. This means that even though the risk of breakthrough infections is low, there will be thousands of fully vaccinated people who become infected and able to infect others, especially with the surging spread of the Delta variant. Low vaccination coverage in many communities is driving the current rapid surge in cases involving the Delta variant, which also increases the chances that even more concerning variants could emerge.
+            </p>
+            <p>
+                Vaccination is the best way to protect yourself, your family, and your community. High vaccination coverage will reduce the spread of the virus and help prevent new variants from emerging. CDC recommends that everyone aged 12 years and older get vaccinated as soon as possible.
+            </p>
+            <GridContainer justify="center">
+                <GridItem xs={12} sm={10} md={8}>
+                    <Card>
+                        <img
+                            className={cardClasses.cardImg}
+                            src="/img/basic3.png"
+                        />
+                    </Card>
+                </GridItem>
+            </GridContainer>
+            <h3 style={{
+                fontFamily: `fantasy`,
+            }}>Face masks</h3>
+            <p>
+                At this time, Vaccination levels were established nationwide, we must use all the prevention strategies available, including masking indoors in public places, to stop transmission and stop the pandemic. Everyone including fully vaccinated people, should wear masks in public indoor places in areas of substantial or high transmission.
+            </p>
+            <GridContainer justify="center">
+                <GridItem xs={12} sm={10} md={8}>
+                    <Card>
+                        <img
+                            className={cardClasses.cardImg}
+                            src="/img/basic4.jpg"
+                        />
+                    </Card>
+                </GridItem>
+            </GridContainer>
+        </Container>
     );
 }
 

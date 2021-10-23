@@ -27,7 +27,7 @@ import Language from "@material-ui/icons/Language";
 
 const dashboardRoutes = [
   {
-    path: "/info",
+    path: "/basic",
     name: "About Covid-19 Delta",
     rtlName: "لوحة القيادة",
     icon: Notifications,

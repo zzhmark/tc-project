@@ -30,138 +30,152 @@ export default function TeamSection() {
       <h2 className={classes.title}>Here is our team</h2>
       <div>
         <GridContainer>
-          <GridItem xs={12} sm={12} md={4}>
+          <GridItem xs={12} sm={6} md={3}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                 <img
-                  src="/img/faces/avatar.jpg"
+                  src="/img/faces/zzh.jpg"
                   alt="..."
                   className={imageClasses}
                 />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Gigi Hadid
+                Zuohan Zhao
                 <br />
-                <small className={classes.smallTitle}>Model</small>
+                <small className={classes.smallTitle}>Group Leader</small>
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#pablo">links</a> for people to be able to
-                  follow them outside the site.
+                  Leader of Group 3's TC project and main developer of this website.
                 </p>
               </CardBody>
-              <CardFooter className={classes.justifyCenter}>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-twitter"} />
-                </Button>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-instagram"} />
-                </Button>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-facebook"} />
-                </Button>
-              </CardFooter>
             </Card>
           </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
+          <GridItem xs={12} sm={6} md={3}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                 <img
-                  src="/img/faces/christian.jpg"
+                  src="/img/faces/ljr.jpg"
                   alt="..."
                   className={imageClasses}
                 />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Christian Louboutin
+                Junru Lu
                 <br />
-                <small className={classes.smallTitle}>Designer</small>
+                <small className={classes.smallTitle}>Reviewer</small>
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#pablo">links</a> for people to be able to
-                  follow them outside the site.
+                  Proofreading for all documents and course assignments.
                 </p>
               </CardBody>
-              <CardFooter className={classes.justifyCenter}>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-twitter"} />
-                </Button>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-linkedin"} />
-                </Button>
-              </CardFooter>
             </Card>
           </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
+          <GridItem xs={12} sm={6} md={3}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                 <img
-                  src="/img/faces/kendall.jpg"
+                  src="/img/faces/wlj.jpg"
                   alt="..."
                   className={imageClasses}
                 />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Kendall Jenner
+                Lijing Wang
                 <br />
-                <small className={classes.smallTitle}>Model</small>
+                <small className={classes.smallTitle}>Actor/Assistant Producer</small>
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#pablo">links</a> for people to be able to
-                  follow them outside the site.
+                  Acting for the video and making presentation slides.
                 </p>
               </CardBody>
-              <CardFooter className={classes.justifyCenter}>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-twitter"} />
-                </Button>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-instagram"} />
-                </Button>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-facebook"} />
-                </Button>
-              </CardFooter>
+            </Card>
+          </GridItem>
+          <GridItem xs={12} sm={6} md={3}>
+            <Card plain>
+              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
+                <img
+                    src="/img/faces/xkx.jpg"
+                    alt="..."
+                    className={imageClasses}
+                />
+              </GridItem>
+              <h4 className={classes.cardTitle}>
+                Kexue Xing
+                <br />
+                <small className={classes.smallTitle}>Material Collection/Website Content</small>
+              </h4>
+              <CardBody>
+                <p className={classes.description}>
+                  Collecting the documents and images used in this site.
+                </p>
+              </CardBody>
+            </Card>
+          </GridItem>
+          <GridItem xs={12} sm={6} md={3}>
+            <Card plain>
+              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
+                <img
+                    src="/img/faces/yyw.jpg"
+                    alt="..."
+                    className={imageClasses}
+                />
+              </GridItem>
+              <h4 className={classes.cardTitle}>
+                Yuwei Yang
+                <br />
+                <small className={classes.smallTitle}>Scripter</small>
+              </h4>
+              <CardBody>
+                <p className={classes.description}>
+                  Drafting the script for the video and this website's documents.
+                </p>
+              </CardBody>
+            </Card>
+          </GridItem>
+
+          <GridItem xs={12} sm={6} md={3}>
+            <Card plain>
+              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
+                <img
+                    src="/img/faces/zjh.jpg"
+                    alt="..."
+                    className={imageClasses}
+                />
+              </GridItem>
+              <h4 className={classes.cardTitle}>
+                Jiahe Zhang
+                <br />
+                <small className={classes.smallTitle}>Video Maker</small>
+              </h4>
+              <CardBody>
+                <p className={classes.description}>
+                  Directing and producing the video for this site.
+                </p>
+              </CardBody>
+            </Card>
+          </GridItem>
+          <GridItem xs={12} sm={6} md={3}>
+            <Card plain>
+              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
+                <img
+                    src="/img/faces/wyq.jpg"
+                    alt="..."
+                    className={imageClasses}
+                />
+              </GridItem>
+              <h4 className={classes.cardTitle}>
+                Yuqi Wang
+                <br />
+                <small className={classes.smallTitle}>Material Collection/Website Content</small>
+              </h4>
+              <CardBody>
+                <p className={classes.description}>
+                  Collecting the documents and images used in this site.
+                </p>
+              </CardBody>
             </Card>
           </GridItem>
         </GridContainer>
