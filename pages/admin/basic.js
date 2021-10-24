@@ -44,6 +44,7 @@ import {
 } from "variables/charts.js";
 
 import styles from "assets/jss/nextjs-material-dashboard/views/dashboardStyle.js";
+import Muted from "../../components/Typography/Muted";
 
 
 const useStyles2 = makeStyles(cardImagesStyles);
@@ -56,10 +57,10 @@ function InfoPage() {
     return (
         <div>
             <Container maxWidth="md" style={{
-                fontFamily: `"Roboto Slab", "Times New Roman", serif`,
+                fontFamily: `Georgia, serif`,
             }}>
                 <h2 style={{
-                    fontFamily: `"Roboto Slab", "Times New Roman", serif`,
+                    fontFamily: `Georgia, serif`,
                 }}>What is Covid-19 Delta?</h2>
                 <p>
                     Delta variant was first discovered in India in October 2020 and identified as an mRNA virus. At present, the virus has spread to 74 countries, which has the characteristics of high infectivity, fast transmission speed and making infected people more vulnerable to serious diseases.
@@ -75,6 +76,7 @@ function InfoPage() {
                 </GridItem>
                 </GridContainer>
                 <Quote text={
+                    <Muted>
                     <small>
                         <h3>How Variants Are Classified</h3>
                         <p>
@@ -84,10 +86,11 @@ function InfoPage() {
                             The SIG meets regularly to evaluate the risk posed by SARS-CoV-2 variants transmitting in the United States and to make recommendations about the classification of variants. This evaluation is undertaken by a group of subject matter experts who assess available data, including variant proportions at the national and regional levels and the potential or known impact of the constellation of mutations on the effectiveness of medical countermeasures, severity of disease, and ability to spread from person to person. Given the continuous evolution of SARS-CoV-2 and our understanding of the impact of variants on public health, variants may be reclassified based on their attributes and prevalence in the United States.
                         </p>
                     </small>
+                    </Muted>
                 }>
                 </Quote>
                 <h2 style={{
-                    fontFamily: `"Roboto Slab", "Times New Roman", serif`,
+                    fontFamily: `Georgia, serif`,
                 }}>How is Delta different?</h2>
                 <p>
                     The Delta variant causes more infections and spreads faster than earlier forms of the virus that causes COVID-19. It might cause more severe illness than previous strains in unvaccinated people.
@@ -105,19 +108,19 @@ function InfoPage() {
                 <h3 style={{
                     fontFamily: `fantasy`,
                 }}>More contagious</h3>
-                <p>
+                <p  style={{fontFamily: `San Francisco`}}>
                     The Delta variant is highly contagious, more than 2x as contagious as previous variants.
                 </p>
                 <h3 style={{
                     fontFamily: `fantasy`,
                 }}>Possibly severer for the unvaccinated</h3>
-                <p>
+                <p style={{fontFamily: `San Francisco`}}>
                     In two different studies from Canada and Scotland, patients infected with the Delta variant are more likely to be hospitalized than patients infected with Alpha or original virus that causes COVID-19. Even so, the vast majority of hospitalization and death caused by COVID-19 is unvaccinated people.
                 </p>
                 <h3 style={{
                     fontFamily: `fantasy`,
                 }}>The vaccinated spreads delta sooner than not</h3>
-                <p>
+                <p style={{fontFamily: `San Francisco`}}>
                     For prior variants, lower amounts of viral genetic material were found in samples taken from fully
                     vaccinated people who had breakthrough infections than from unvaccinated people with COVID-19. For
                     people infected with the Delta variant, similar amounts of viral genetic material have been found
@@ -126,7 +129,16 @@ function InfoPage() {
                     people. This means fully vaccinated people will likely spread the virus for less time than
                     unvaccinated people.
                 </p>
-
+                <GridContainer justify="center">
+                    <GridItem xs={12} sm={10} md={8}>
+                        <Card>
+                            <img
+                                className={cardClasses.cardImg}
+                                src="/img/basic5.jpg"
+                            />
+                        </Card>
+                    </GridItem>
+                </GridContainer>
 
             </Container>
         </div>

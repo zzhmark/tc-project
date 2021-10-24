@@ -53,33 +53,19 @@ function PreventionsPage(props) {
     const classes = useStyles();
     return (
         <Container maxWidth="md" style={{
-            fontFamily: `"Roboto Slab", "Times New Roman", serif`,
+            fontFamily: `Georgia, serif`,
         }}>
-            <h2 style={{
-                fontFamily: `"Roboto Slab", "Times New Roman", serif`,
-            }}>General Protective measures against novel coronavirus</h2>
+            <h2 style={{fontFamily: `San Francisco`}}>General Protective Tactics</h2>
             <h3 style={{
                 fontFamily: `fantasy`,
-            }}>Vaccines</h3>
+            }}>Vaccination</h3>
             <p>
-                The COVID-19 vaccines approved or authorized in the United States are highly effective at preventing severe disease and death, including the Delta variant. But they are not 100% effective, some fully vaccinated people will become infected (called a breakthrough infection) and experience illness. The vaccine provides optimal protection against serious illness and death.
-            </p>
-            <p>
-                Vaccines play a crucial role in limiting the spread of the virus and minimizing severe disease. Although vaccines are highly effective, they are not perfect, and there will be vaccine breakthrough infections. Millions of Americans are vaccinated, and that number is growing. This means that even though the risk of breakthrough infections is low, there will be thousands of fully vaccinated people who become infected and able to infect others, especially with the surging spread of the Delta variant. Low vaccination coverage in many communities is driving the current rapid surge in cases involving the Delta variant, which also increases the chances that even more concerning variants could emerge.
+                The COVID-19 vaccines approved or authorized in the United States are highly effective at preventing severe disease and death, including the Delta variant. But they are not 100% effective, some fully vaccinated people will become infected (called a breakthrough infection) and experience illness.
             </p>
             <p>
                 Vaccination is the best way to protect yourself, your family, and your community. High vaccination coverage will reduce the spread of the virus and help prevent new variants from emerging. CDC recommends that everyone aged 12 years and older get vaccinated as soon as possible.
             </p>
-            <GridContainer justify="center">
-                <GridItem xs={12} sm={10} md={8}>
-                    <Card>
-                        <img
-                            className={cardClasses.cardImg}
-                            src="/img/basic3.png"
-                        />
-                    </Card>
-                </GridItem>
-            </GridContainer>
+
             <h3 style={{
                 fontFamily: `fantasy`,
             }}>Face masks</h3>
@@ -91,7 +77,54 @@ function PreventionsPage(props) {
                     <Card>
                         <img
                             className={cardClasses.cardImg}
-                            src="/img/basic4.jpg"
+                            src="/img/basic4.png"
+                        />
+                    </Card>
+                </GridItem>
+            </GridContainer>
+            <h3 style={{
+                fontFamily: `fantasy`,
+            }}>Keep apart</h3>
+            <p>
+                Inside your home: Avoid close contact with people who are sick. if possible, maintain 6 feet between the person who is sick and other household members.
+            </p>
+            <p>
+                Outside your home: put 6 feet of distance between yourself and people who don’t live in your household. remember that some people without symptoms may be able to spread virus. keeping distance from others is especially important for people who are at higher risk of getting very sick.
+            </p>
+            <h3 style={{
+                fontFamily: `fantasy`,
+            }}>Avoid crowds and poorly ventilated spaces</h3>
+            <p>
+                Being in crowds like in restaurants, bars, fitness centers, or movie theaters puts you at higher risk for COVID-19. Avoid indoor spaces that do not offer fresh air from the outdoors as much as possible. If indoors, bring in fresh air by opening windows and doors, if possible.
+            </p>
+            <GridContainer justify="center">
+                <GridItem xs={12} sm={10} md={8}>
+                    <Card>
+                        <img
+                            className={cardClasses.cardImg}
+                            src="/img/basic6.png"
+                        />
+                    </Card>
+                </GridItem>
+            </GridContainer>
+            <h3 style={{
+                fontFamily: `fantasy`,
+            }}>Wash hands often</h3>
+            <p>
+                Wash your hands often with soap and water for at least 20 seconds especially after you have been in a public place, or after blowing your nose, coughing, or sneezing. If soap and water are not readily available, use a hand sanitizer that contains at least 60% alcohol. Cover all surfaces of your hands and rub them together until they feel dry. Avoid touching your eyes, nose, and mouth with unwashed hands.
+            </p>
+            <h3 style={{
+                fontFamily: `fantasy`,
+            }}>Monitor your health daily</h3>
+            <p>
+                Be alert for symptoms. Watch for fever, cough, shortness of breath, or other symptoms of COVID-19. Especially important if you are running essential errands, going into the office or workplace, and in settings where it may be difficult to keep a physical distance of 6 feet. Take your temperature if symptoms develop. Don’t take your temperature within 30 minutes of exercising or after taking medications that could lower your temperature, like acetaminophen. Follow CDC guidance if symptoms develop.
+            </p>
+            <GridContainer justify="center">
+                <GridItem xs={12} sm={10} md={8}>
+                    <Card>
+                        <img
+                            className={cardClasses.cardImg}
+                            src="/img/basic3.png"
                         />
                     </Card>
                 </GridItem>

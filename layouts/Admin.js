@@ -21,6 +21,7 @@ import places from 'variables/places'
 let ps;
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 import Button from "../components/CustomButtons/Button";
+import GridContainer from "../components/Grid/GridContainer";
 
 
 export default function Admin({ children, ...rest }) {
@@ -102,10 +103,12 @@ export default function Admin({ children, ...rest }) {
             <div className={classes.container}>
               {children}
               {router.pathname.includes('/admin/preventions')?
+                  <GridContainer justify='center'>
+
                   <Button onClick={() => {
                     mainPanel.current.scrollTop = 0;
-                  }
-                  }><ArrowUpwardIcon/>Start your voyage from above</Button>
+                  }} color={'primary'}><ArrowUpwardIcon/>Start your voyage from above</Button>
+                  </GridContainer>
                   : null}
             </div>
           </div>
