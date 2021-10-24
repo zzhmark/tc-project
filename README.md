@@ -36,7 +36,7 @@ It is open source, and it's Github Repo can be found [here](https://github.com/c
 
 ### Homepage
 The navigation provides direct links to other pages.(background is for testing, should be a proper video)
-![img_2.png](public/img_2.png)
+![img.png](public/img/img.png)
 And scroll down...
 ![img_1.png](public/img_1.png)
 are also the links to the pages.
