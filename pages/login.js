@@ -70,11 +70,23 @@ export default function LoginPage(props) {
     const landingPageClasses = landingPageStyles();
 
     const [hw, setHw] = React.useState(true);
+    const { ...rest } = props;
+    const [bg, setBg] = React.useState(0.1)
+
+    function handleOffset() {
+        let t = (window.pageYOffset || document.documentElement.scrollTop) / window.innerHeight * 1.5
+        if (t > 1) t = 1;
+        if (t < 0.1) t = 0.1
+        setBg(t)
+    }
     useEffect(() => {
-        setHw(window.innerWidth < window.innerHeight)
+        setHw(window.innerWidth <= 960)
+        window.addEventListener('scroll', handleOffset, true)
+        return () =>{
+            window.removeEventListener('scroll', handleOffset, true)
+        }
     }, [])
 
-    const { ...rest } = props;
     return (
         <div>
             <Header
@@ -106,10 +118,22 @@ export default function LoginPage(props) {
                     <ControlBar disableDefaultControls >
                         <VolumeMenuButton />
                     </ControlBar>
-                    <source src="/sample.mp4" type='video/mp4' />
+                    <source src="/video.mp4" type='video/mp4' />
                 </Player>
             </div>
-
+            <div
+                style={{
+                    backgroundColor: 'rgba(0,0,0,' + bg + ')',
+                    zIndex: 10,
+                    position: 'absolute',
+                    width: '100vw',
+                    height: '100vh',
+                    top: 0,
+                    left: 0,
+                    pointerEvents: 'none'
+                }
+                }
+            ></div>
             <div style={{
                 backgroundImage: "url('/img/seu_big.jpg')",
                 backgroundSize: "cover",
