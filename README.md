@@ -35,7 +35,7 @@ It is open source, and it's Github Repo can be found [here](https://github.com/c
 ## Pages & Routing
 
 ### Homepage
-The navigation provides direct links to other pages.(background is for testing, should be a proper video)
+The navigation provides direct links to other pages.
 ![img.png](public/img/img.png)
 And scroll down...
 ![img_1.png](public/img_1.png)
